@@ -1,0 +1,21 @@
+.card_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin:20px 10px;
+}
+
+.ion-card{
+    color: var(--ion-color-primary);
+    max-width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(22, 21, 21);
+    /* opacity: 0.8; */
+}
+
+.option_container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

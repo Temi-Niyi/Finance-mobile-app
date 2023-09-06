@@ -1,0 +1,41 @@
+.introSwiper {
+    height: 100%;
+    width: 100%;
+}
+
+.addBlop {
+    background-color: var(--ion-color-primary);
+    position: relative;
+}
+
+.addBlop img {
+    height: 40vh;
+    margin-bottom: 40px;
+}
+
+.addBlop::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/Blob.svg');
+  background-repeat: no-repeat;
+  background-position:center;
+  z-index: -1;
+}
+
+.addBlop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    max-width: 280px;
+}
+ion-button {
+    text-transform: capitalize;
+  }

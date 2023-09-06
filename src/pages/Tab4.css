@@ -1,0 +1,26 @@
+.centered-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 40px;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 4px;
+}
+
+.center-button {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profileOptions{
+    margin-bottom: 20px;
+}
