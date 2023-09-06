@@ -27,6 +27,8 @@ import Intro from './components/intro';
 import Send from './pages/Send';
 import Tab4 from './pages/Tab4';
 import Tab3 from './pages/Tab3';
+import Tab1 from './pages/Tab1';
+import Tab2 from './pages/Tab2';
 
 setupIonicReact();
 
@@ -34,14 +36,16 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        {/* <Route exact component={Intro} path='/Intro'/> */}
         <Route exact path="/">
           <Login />
         </Route>
         <Route component={Home} path="/home" />
         <Route component={Register} path="/register" exact />
-        <Route component={Tab4} path="/tab4" />
-        <Route component={Send} path="/send" />
+        <Route component={Tab1} path="/tab1" exact />
+        <Route component={Tab2} path="/tab2" exact />
+        <Route component={Tab3} path="/tab3" exact />
+        <Route component={Tab4} path="/tab4" exact />
+        <Route component={Send} path="/send" exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

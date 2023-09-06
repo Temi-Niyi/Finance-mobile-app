@@ -12,51 +12,9 @@ const Login: React.FC = () => {
         event.preventDefault();
         console.log('doLogin');
     }
-//     const router = useIonRouter();
-//     const [introSeen, setIntroSeen] = useState(true);
-//     const [present, dismiss] = useIonLoading();
-
-//     useEffect(() => {
-//         const checkStorage = async () => {
-//             const seen = await Preferences.get ({ key: INTRO_KEY });
-//             console.log("launch ~ file: Login.tsx:17 ~ checkStorage ~ seen:", seen)
-//             setIntroSeen(seen.value === 'true');
-//         }
-//         checkStorage();
-//     }, []);
-
-//     const doLogin = async (event: any) => {
-//         event.preventDefault ();
-//         await present("Logging in...");
-//         setTimeout(async () => {
-//             dismiss();
-//             router.push('/app', 'root');
-//         }, 2000);
-//         // console.log('doLogin');
-//     };
-
-//     const finishIntro = async() => {
-//         console.log('FIN');
-//         setIntroSeen(true);
-//         Preferences.set({ key: INTRO_KEY, value: 'true'});
-//     }
-
-//     const seeIntroAgain = () => {
-//         setIntroSeen(false);
-//         Preferences.remove({ key: INTRO_KEY });
-//     }
 
     return (
-        // <>
-        // {!introSeen ? (
-        //   <Intro onFinish={finishIntro} />  
-        // ) : (
         <IonPage>
-            <IonHeader>
-                <IonToolbar color={'primary'}>
-                    <IonTitle>First Project</IonTitle>
-                </IonToolbar>
-            </IonHeader>
             <IonContent scrollY={false} className="ion-padding">
                 <IonGrid fixed>
                     <IonRow className='ion-justify-content-center'>
@@ -88,7 +46,7 @@ const Login: React.FC = () => {
 
                             <IonText color={'primary'}>Forgot password?</IonText>
 
-                            <IonButton routerLink='/home' className='ion-margin-top' type='submit'  expand="block">Sign in
+                            <IonButton routerLink='/home/tab1' className='ion-margin-top' type='submit'  expand="block">Sign in
                             <IonIcon icon={logInOutline} slot="end" ></IonIcon>
                             </IonButton>
 

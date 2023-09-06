@@ -39,12 +39,12 @@ const Signup: React.FC = () => {
                             <IonInput mode="md" className='ion-margin-top' label="Re-enter Password" type='password' placeholder='*****' labelPlacement='floating' fill='outline'>
                             </IonInput>
 
-                            <IonButton routerLink='/login' className='ion-margin-top ion-margin-botom' type='submit'  expand="block">Register
+                            <IonButton routerLink='/' className='ion-margin-top ion-margin-botom' type='submit'  expand="block">Register
                             <IonIcon icon={logInOutline} slot="end" ></IonIcon>
                             </IonButton>
 
                             <IonText className='ion-margin-top'>Already have an account?</IonText>
-                            <IonButton routerLink='/login' className='ion-margin-top' type='button'  expand="block" color={'secondary'}>Sign in
+                            <IonButton routerLink='/' className='ion-margin-top' type='button'  expand="block" color={'secondary'}>Sign in
                             <IonIcon icon={personCircleOutline} slot="end"></IonIcon>
                             </IonButton>
                         </form>
